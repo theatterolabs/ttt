@@ -1,0 +1,70 @@
+<h1 id="points">+50</h1>
+
+<div id="end">
+
+  <img id="end-background" src="https://theatterolabs.github.io/endScreen2_bg.png">
+  
+  <h1 id="endScore"></h1>
+  
+  <button id="playAgain_btn" class="playAgain_btn" onclick="hidePlayAgain()">Play Again</button>
+  
+</div>
+
+<!-- End of End Screen -->
+
+
+<!-- Play Screen -->
+
+<div id="play">
+ <div id="consent">
+   <div id="agePopup">
+     <h1 id="agetext">You must be of legal drinking age to enter our site.</h1>
+     <h1 id="agesubtext">By entering our site, you agree to the terms and conditions, privacy policy and other directives mentioned on the site.</h1>
+     <button id="enter_btn" class="enter_btn" onclick="hideConsent()">Enter</button>
+   </div>
+ </div>
+  
+  <img id="background" src="https://theatterolabs.github.io/Play_Screen_2.png">
+  
+  <button id="play_btn" class="play_btn" onclick="hidePlay()">Play</button>
+  
+  <h1 id="screen_record">Screen Record<br> Your Adventure</h1>
+  
+ 
+  
+</div>
+<!-- End Play Screen -->
+
+
+<!-- Countdown -->
+<h1 id="three">3</h1>
+<h1 id="two">2</h1>
+<h1 id="one">1</h1>
+<!-- End Countdown -->
+
+<a-scene cursor="rayOrigin:mouse">
+  <!-- Asset Management-->
+  <a-assets>
+    
+      <video id="video"  muted autoplay loop  crossorigin="anonymous" playsinline webkit-playsinline src="https://theatterolabs.github.io/ski2x.mp4" type="video/mp4">
+      </video>
+    <img id="coin" crossorigin="anonymous" src="https://theatterolabs.github.io/logo.png">
+
+    
+ </a-assets>
+  
+  <!-- Camera -->
+  <a-camera>
+    </a-camera>
+ 
+    <a-image id="coin_r" src="#coin" width="35" height="35" random-delay1 animation1> </a-image>
+  
+   <a-image id="coin_l" src="#coin" width="35" height="35" random-delay2 animation2 > </a-image>
+  <!-- 360 Video -->
+  <a-videosphere src="#video" rotation="0 -90 0" loop="false">
+    </a-videosphere>
+  
+</a-scene> 
+    
+
+  
